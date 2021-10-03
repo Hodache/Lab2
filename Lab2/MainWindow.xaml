@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Расчет по вкладу" Height="385.2" Width="248" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Вклад" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Height="32" Width="70" FontSize="20"/>
+        <Label x:Name="TaskLabel" Content="Процент" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Height="60" Width="130" FontSize="20"/>
+        <TextBox x:Name="DepositTextBox" KeyDown="DepositTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="120,30,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <RadioButton Content="Процент" HorizontalAlignment="Left" Margin="20,107,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" IsChecked="True"/>
+        <RadioButton Content="Целевой вклад" HorizontalAlignment="Left" Margin="20,137,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
+        <TextBox x:Name="TaskTextBox" KeyDown="TaskTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="120,174,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button x:Name="CalculateButton" Content="Вычислить месяц" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="222" Height="43" FontSize="20" Grid.ColumnSpan="2" Click="CalculateButton_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Height="50" Width="222" Grid.ColumnSpan="2"/>
+        <Label Content="Расчет месяца по:" HorizontalAlignment="Left" Margin="20,76,0,0" VerticalAlignment="Top" Width="132"/>
+
     </Grid>
 </Window>

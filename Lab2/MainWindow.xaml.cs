@@ -24,5 +24,34 @@ namespace Lab2
         {
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            TaskLabel.Content = "Процент";
+        }
+
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+            TaskLabel.Content = "Целевой\nвклад";
+        }
+
+        private void DepositTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                TaskTextBox.Focus();
+            }
+        }
+        private void TaskTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                CalculateButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            }
+        }
+        private void CalculateButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
