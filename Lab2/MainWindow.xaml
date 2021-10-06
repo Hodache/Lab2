@@ -5,25 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab2"
         mc:Ignorable="d"
-        Title="Расчет по вкладу" Height="412.4" Width="248" ResizeMode="NoResize" Closing="MainWindow_Closing">
-    <Grid>
+        Title="Расчет по вкладу" Height="318.8" Width="441.6" ResizeMode="NoResize" Closing="MainWindow_Closing">
+    <Grid Margin="0,0,-6.4,0.2">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Вклад" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Height="32" Width="70" FontSize="20"/>
-        <Label x:Name="taskLabel" Content="" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Height="60" Width="95" FontSize="20"/>
-        <TextBox x:Name="depositTextBox" KeyDown="DepositTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="120,30,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20"/>
-        <RadioButton x:Name="percentRadioBtn" Content="Процент" HorizontalAlignment="Left" Margin="20,107,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" IsChecked="True"/>
-        <RadioButton x:Name="depositSumRadioBtn" Content="Целевой вклад" HorizontalAlignment="Left" Margin="20,137,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
-        <TextBox x:Name="taskTextBox" KeyDown="TaskTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="120,174,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20"/>
-        <Button x:Name="CalculateButton" Content="Вычислить месяц" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="222" Height="43" FontSize="20" Click="CalculateButton_Click"/>
-        <Label Content="Расчет месяца по:" HorizontalAlignment="Left" Margin="20,76,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Вклад" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Height="32" Width="70" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="taskLabel" Content="" HorizontalAlignment="Left" Margin="20,88,0,0" VerticalAlignment="Top" Height="60" Width="95" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="depositTextBox" KeyDown="DepositTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="139,30,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20"/>
+        <RadioButton x:Name="percentRadioBtn" Content="Процент" HorizontalAlignment="Left" Margin="265,61,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" IsChecked="True" FontSize="20"/>
+        <RadioButton x:Name="depositSumRadioBtn" Content="Целевой вклад" HorizontalAlignment="Left" Margin="265,91,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" FontSize="20"/>
+        <TextBox x:Name="taskTextBox" KeyDown="TaskTextBox_KeyDown" HorizontalAlignment="Left" Height="32" Margin="139,88,0,0" TextWrapping="Wrap" Width="90" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="CalculateButton" Content="Расчитать" HorizontalAlignment="Left" Margin="200,227,0,0" VerticalAlignment="Top" Width="100" Height="40" FontSize="20" Click="CalculateButton_Click"/>
+        <Label Content="Расчет месяца по:" HorizontalAlignment="Left" Margin="265,24,0,0" VerticalAlignment="Top" Width="132" FontSize="20"/>
         <Button Content="Задание" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Очистить поля" HorizontalAlignment="Left" Margin="120,224,0,0" VerticalAlignment="Top" Width="90" Height="36" Click="Button_Click_1"/>
-        <TextBlock x:Name="answerTextBlock" HorizontalAlignment="Left" Margin="10,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="222" FontWeight="Bold"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="322,227,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Button_Click_1" FontSize="20"/>
+        <TextBlock x:Name="answerTextBlock" HorizontalAlignment="Left" Margin="20,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="402" FontSize="20"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="90" Margin="255,30,0,0" VerticalAlignment="Top" Width="177"/>
 
     </Grid>
 </Window>
