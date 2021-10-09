@@ -24,7 +24,7 @@ namespace Lab2
         {
             InitializeComponent();
 
-            // Восстановление информации о радио кнопках 
+            // Восстановление информации о радиокнопках 
             percentRadioBtn.IsChecked = Properties.Settings.Default.percentRadioBtn;
             depositSumRadioBtn.IsChecked = Properties.Settings.Default.depositSumRadioBtn;
 
@@ -113,10 +113,6 @@ namespace Lab2
 
                     answerTextBlock.Text = $"Месяцев до превышения размера вклада ({depositSum}): {month}";
                 }
-            }
-            else
-            {
-                MessageBox.Show("Ошибка выбора!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
